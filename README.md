@@ -4,7 +4,7 @@
 ## Introduction
 The following project consist of a telegram bot that reads the user's preferences regarding restaurant's food, location and others and gives 12 restaurants that match the search, whilst also offering the shortest path to get to the restaurant of the user's choice.
 
-## MODULES
+## Modules
 
 The project is divided into different interdependent modules: restaurants.py, metro.py, city.py and bot.py. 
 ### Restaurants.py
