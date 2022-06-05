@@ -77,7 +77,7 @@ The module metro.py contains the following functions:
 
 
 ### City.py
-This following module reads information from the metro module and builds a graph constituted by the metrograph and the graph of the city's streets, which is already built.
+This following module reads information from the metro module and builds a graph constituted by the metrograph and the graph of the city's streets, which are already built.
 #### Prerequisited libraries: 
 ```
 import pandas as pd
@@ -129,7 +129,25 @@ from metro import *
 
 ```def plot_path(g: CityGraph, p: Path, filename: str) -> None```: Given a path, this function draws the path with the Barcelona's map
     behind and saves the picture in a specific file.
-   
+    
+### Bot.py
+This following module reads information from the restaurants, the metro and the city module. This module waits for a user to connect and offers help to find a restaurant through some searches. The bot will show the users how to get to the chosen restaurant from their current location, giving the shortest rute by metro and walking.
+
+#### Prerequisited libraries: 
+```
+import pandas as pd
+from staticmap import StaticMap, CircleMarker
+from typing import *
+from dataclasses import dataclass
+from typing_extensions import TypeAlias
+import networkx as networkx
+from haversine import haversine, Unit
+import matplotlib.pyplot as plt
+import osmnx as osmnx
+import pickle
+import os
+from metro import *
+```
 
 ## Authors
 
