@@ -135,22 +135,15 @@ This following module reads information from the restaurants, the metro and the 
 
 #### Prerequisited libraries: 
 ```
-import pandas as pd
-from staticmap import StaticMap, CircleMarker
-from typing import *
-from dataclasses import dataclass
-from typing_extensions import TypeAlias
-import networkx as networkx
-from haversine import haversine, Unit
-import matplotlib.pyplot as plt
-import osmnx as osmnx
-import pickle
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+import restaurants as rest
+import random
 import os
-from metro import *
+import city
+import metro
+from staticmap import StaticMap, CircleMarker
 ```
 
 ## Authors
 
 Martina Albà and Blanca Lamarca
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
