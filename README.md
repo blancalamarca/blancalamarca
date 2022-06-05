@@ -62,6 +62,9 @@ The module metro.py contains the following functions:
 ```def get_time(distance: float, type: str) -> float ```:Given a distance and a string that represents our situation when moving around the city, this function returns the time we need to travel this distance.
 
 ```def show(g: MetroGraph) -> None```: Given a graph of the type Metrograph (networkx.graph), this void function displays the nodes and edges that take part of this graph.
+x-special/nautilus-clipboard
+copy
+file:///home/martina/Documents/AP2/Pr%C3%A0ctica2/IMG-1199.jpg
 
 ```def plot(g: MetroGraph, filename: str) -> None ```: Given a graph of the type Metrograph (networkx.graph) and a filename (string), this void function representsthe nodes and edges that take part of this graph imprinted in a representation of Barcelona.
 ### City.py
