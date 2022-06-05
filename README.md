@@ -143,15 +143,15 @@ import city
 import metro
 from staticmap import StaticMap, CircleMarker
 ```
-```def start```: This function iniciates the chat with the bot.
+```def start(update, context)```: This function iniciates the chat with the bot.
 
-```def help```: With this function the bot offers you help. It will tell you the different commands that you can use.
+```def help(update, context)```: With this function the bot offers you help. It will tell you the different commands that you can use.
 
-```def author```: This function shows the name of the project's authors.
+```def author(update, context)```: This function shows the name of the project's authors.
 
-```def find```: This function searches the restaurants that match the user's request and writes a list with the first 12 restaurants.
+```def find(update, context)```: This function searches the restaurants that match the user's request and writes a list with the first 12 restaurants.
 
-```def info```: This function shows information from one restaurant, which the user specifies with it's number.
+```def info(update, context)```: This function shows information from one restaurant, which the user specifies with it's number.
 
 ```def guide(update, context)```: This function shows a map with the shortest path to get to the chosen restaurant from the user's current location.
 
