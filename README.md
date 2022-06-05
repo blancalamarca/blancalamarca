@@ -131,7 +131,7 @@ from metro import *
     behind and saves the picture in a specific file.
     
 ### Bot.py
-This following module reads information from the restaurants, the metro and the city module. This module waits for a user to connect and offers help to find a restaurant through some searches. The bot will show the users how to get to the chosen restaurant from their current location, giving the shortest rute by metro and walking.
+This following module reads information from the restaurants, the metro and the city module. This module waits for a user to connect and offers help to find a restaurant through some searches. The bot will show the users how to get to the chosen restaurant from their current location, giving the shortest path by metro and walking.
 
 #### Prerequisited libraries: 
 ```
@@ -143,6 +143,17 @@ import city
 import metro
 from staticmap import StaticMap, CircleMarker
 ```
+```def start```: This function iniciates the chat with the bot.
+
+```def help```: With this function the bot offers you help. It will tell you the different commands that you can use.
+
+```def author```: This function shows the name of the project's authors.
+
+```def find```: This function searches the restaurants that match the user's request and writes a list with the first 12 restaurants.
+
+```def info```: This function shows information from one restaurant, which the user specifies with it's number.
+
+```def guide(update, context)```: This function shows a map with the shortest path to get to the chosen restaurant from the user's current location.
 
 ## Authors
 
