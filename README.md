@@ -62,7 +62,6 @@ The module metro.py contains the following functions:
 ```def get_time(distance: float, type: str) -> float ```:Given a distance and a string that represents our situation when moving around the city, this function returns the time we need to travel this distance.
 
 ```def show(g: MetroGraph) -> None```: Given a graph of the type Metrograph (networkx.graph), this void function displays the nodes and edges that take part of this graph.
-![IMG-1199](https://user-images.githubusercontent.com/106911781/172048610-de3a8e55-d866-4df8-955f-8c423c22b813.jpg)
 
 ```def plot(g: MetroGraph, filename: str) -> None ```: Given a graph of the type Metrograph (networkx.graph) and a filename (string), this void function representsthe nodes and edges that take part of this graph imprinted in a representation of Barcelona.
 ### City.py
@@ -101,6 +100,8 @@ from metro import *
 ```def get_nearest_node(g: OsmnxGraph, coordinates: Coord) -> int```: Given a location, these function returns the nearest street node to that location.
 
 ```def show(g: CityGraph) -> None```: Void function that  displays the citygraph that it reads in a new window.
+
+![IMG-1199](https://user-images.githubusercontent.com/106911781/172048610-de3a8e55-d866-4df8-955f-8c423c22b813.jpg)
 
 ```def get_nodes_positions(city_graph: CityGraph) -> dict```: This function returns a dictionary with node codes as keys and their positions as values.
 
