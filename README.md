@@ -155,6 +155,9 @@ from staticmap import StaticMap, CircleMarker
 
 ```def find(update, context)```: This function searches the restaurants that match the user's request and writes a list with the first 12 restaurants.
 
+![IMG-1204](https://user-images.githubusercontent.com/106911781/172054649-2cdc2901-0d26-44c8-80da-8795478d0aea.jpg)
+
+
 ```def info(update, context)```: This function shows information from one restaurant, which the user specifies with it's number.
 
 ```def guide(update, context)```: This function shows a map with the shortest path to get to the chosen restaurant from the user's current location.
