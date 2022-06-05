@@ -63,7 +63,15 @@ The module metro.py contains the following functions:
 
 ```def show(g: MetroGraph) -> None```: Given a graph of the type Metrograph (networkx.graph), this void function displays the nodes and edges that take part of this graph.
 
+
+![IMG-1200](https://user-images.githubusercontent.com/106911781/172048975-4ab2e98c-98c1-4de9-99a9-d0bcf97a2921.jpg)
+
+
 ```def plot(g: MetroGraph, filename: str) -> None ```: Given a graph of the type Metrograph (networkx.graph) and a filename (string), this void function representsthe nodes and edges that take part of this graph imprinted in a representation of Barcelona.
+
+![map](https://user-images.githubusercontent.com/106911781/172049006-80e164a7-b560-4384-ae92-8b88ee3cf6a5.png)
+
+
 ### City.py
 This following module reads information from the metro module and builds a graph constituted by the metrograph and the graph of the city's streets, which is already built.
 #### Prerequisited libraries: 
@@ -106,6 +114,10 @@ from metro import *
 ```def get_nodes_positions(city_graph: CityGraph) -> dict```: This function returns a dictionary with node codes as keys and their positions as values.
 
 ```def plot(g: CityGraph, filename: str) -> None```: This void function saves the citygraph g that it receives as a parameter against Barcelona's map in the file filename(string).
+
+
+![city_map](https://user-images.githubusercontent.com/106911781/172049031-9e2e6b0a-86ed-48e2-be6e-f02784d15b5c.png)
+
 
 ```def get_colour(type: str) -> str```: This non-void function receives a string parameter and returns the colour of a given element of the correspondin graph.
 
