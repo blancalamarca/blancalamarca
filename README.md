@@ -58,18 +58,21 @@ The module metro.py contains the following functions:
 
 ```def connect_transfers(metro_graph: MetroGraph, stations_list: Stations) -> None ```:This function connects the different lines of the same station.
 
-```def connect_accesses(metro_graph: MetroGraph, accesses_list: Accesses, stations_list: Stations)-> None ```:This function connects accesses with their corresponding stations. Once we have connected the access with one node from the station, we stop checking the rest of the station nodes.
+```def connect_accesses(metro_graph: MetroGraph, accesses_list: Accesses, stations_list: Stations)-> None ```:This function connects accesses with their corresponding stations.
 
 ```def get_time(distance: float, type: str) -> float ```:Given a distance and a string that represents our situation when moving around the city, this function returns the time we need to travel this distance.
 
-```def show(g: MetroGraph) -> None```: Given a graph of the type Metrograph (networkx.graph), this void function displays the nodes and edges that take part of this graph.
+```def show(g: MetroGraph) -> None```: This void function gets a graph as a parameter and displays it in
+    a new window.
 
 
 ![IMG-1200](https://user-images.githubusercontent.com/106911781/172048975-4ab2e98c-98c1-4de9-99a9-d0bcf97a2921.jpg)
 
 
-```def plot(g: MetroGraph, filename: str) -> None ```: Given a graph of the type Metrograph (networkx.graph) and a filename (string), this void function representsthe nodes and edges that take part of this graph imprinted in a representation of Barcelona.
-
+```def plot(g: MetroGraph, filename: str) -> None ```: This function saves a given graph as a picture with the Barcelona's
+    map behind. The file name where it is saved must be an input parameter.
+    
+    
 ![map](https://user-images.githubusercontent.com/106911781/172049006-80e164a7-b560-4384-ae92-8b88ee3cf6a5.png)
 
 
@@ -108,21 +111,24 @@ from metro import *
 
 ```def get_nearest_node(g: OsmnxGraph, coordinates: Coord) -> int```: Given a location, these function returns the nearest street node to that location.
 
-```def show(g: CityGraph) -> None```: Void function that  displays the citygraph that it reads in a new window.
+```def show(g: CityGraph) -> None```: This void function gets a graph as a parameter and displays it in
+    a new window.
 
 ![IMG-1199](https://user-images.githubusercontent.com/106911781/172048610-de3a8e55-d866-4df8-955f-8c423c22b813.jpg)
 
 ```def get_nodes_positions(city_graph: CityGraph) -> dict```: This function returns a dictionary with node codes as keys and their positions as values.
 
-```def plot(g: CityGraph, filename: str) -> None```: This void function saves the citygraph g that it receives as a parameter against Barcelona's map in the file filename(string).
+```def plot(g: CityGraph, filename: str) -> None```: This function saves a given graph as a picture with the Barcelona's
+    map behind. The file name where it is saved must be an input parameter.
 
 
 ![city_map](https://user-images.githubusercontent.com/106911781/172049031-9e2e6b0a-86ed-48e2-be6e-f02784d15b5c.png)
 
 
-```def get_colour(type: str) -> str```: This non-void function receives a string parameter and returns the colour of a given element of the correspondin graph.
+```def get_colour(type: str) -> str```: Given a string, this function searches the colour related to the word.
 
-```def plot_path(g: CityGraph, p: Path, filename: str) -> None```: This void function saves the corresponding path that takes place in the citygraph g according to Path, which is a list of node's id in the file filename(string).
+```def plot_path(g: CityGraph, p: Path, filename: str) -> None```: Given a path, this function draws the path with the Barcelona's map
+    behind and saves the picture in a specific file.
    
 
 
