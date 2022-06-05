@@ -147,6 +147,10 @@ from staticmap import StaticMap, CircleMarker
 
 ```def help(update, context)```: With this function the bot offers you help. It will tell you the different commands that you can use.
 
+
+![IMG-1203](https://user-images.githubusercontent.com/106911781/172054575-1de2994f-a76f-4ee8-8350-c7f1290b6cf8.jpg)
+
+
 ```def author(update, context)```: This function shows the name of the project's authors.
 
 ```def find(update, context)```: This function searches the restaurants that match the user's request and writes a list with the first 12 restaurants.
